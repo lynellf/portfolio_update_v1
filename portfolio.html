@@ -29,9 +29,9 @@
     <main class="home-flex">
       <div class="card">
         <h2>This website</h2>
-        <p>As a recent college graduate, I want to continue my life of learning and creating value for others. Joining the Treehouse
-          Techdegree program feels like the right step after finishing with a bachelor's in management information systems.
-          I'm super excited to be a part of this amazing experience.</p>
+        <a href="http://ezellf.com" class="portfolio-link"><img class="portfolio-img" src="images/project3.JPG" alt="Home Website"></a>
+        <p>This project is a significant upgrade over the previous layout I had for my website.
+        Bootstrap was a crutch I used for web design for far too long.</p>
           <h3>Technologies Used</h3>
           <ul class="skills">
             <li>HTML</li>
@@ -40,67 +40,70 @@
           </ul>
         </div> <!-- card -->
 
-        <div class="card">
-          <h2>Deck Optimizer (Web-Based)</h2>
-          <p>As a recent college graduate, I want to continue my life of learning and creating value for others. Joining the Treehouse
-            Techdegree program feels like the right step after finishing with a bachelor's in management information systems.
-            I'm super excited to be a part of this amazing experience.</p>
-            <h3>Technologies Used</h3>
-            <ul class="skills">
-              <li>HTML</li>
-              <li>CSS</li>
-              <li>JavaScript</li>
-              <li>jQuery</li>
-              <li>AJAX</li>
-              <li>Node.js</li>
-              <li>Express</li>
-              <li>MongoDB</li>
-            </ul>
-          </div> <!-- card -->
+    <div class="card">
+      <h2>Deck Optimizer (Web-Based)</h2>
+      <a href="https://github.com/lynellf/Yusei" class="portfolio-link"><img class="portfolio-img" src="images/project2.JPG" alt="Deck Optmizer. Second iteration."></a>
+      <p>This iteration of the Deck Optimizer is completely independent of spreadsheets. By far, this is the most ambitious project I have undertaken.</p>
+      <p>Currently, this tool is a work in progess. However, the main application is completely functional. Users are capable of registering, logging-in, generate
+    a deck, save, and load configurations. This project will be available to the public this fall.</p> <p>Currently a private repo.</p>
+        <h3>Technologies Used</h3>
+        <ul class="skills">
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>jQuery</li>
+          <li>AJAX</li>
+          <li>Node.js</li>
+          <li>Express</li>
+          <li>MongoDB</li>
+        </ul>
+      </div> <!-- card -->
 
-          <div class="card">
-            <h2>Deck Optimizer (Spreadsheet)</h2>
-            <p>As a recent college graduate, I want to continue my life of learning and creating value for others. Joining the Treehouse
-              Techdegree program feels like the right step after finishing with a bachelor's in management information systems.
-              I'm super excited to be a part of this amazing experience.</p>
-              <h3>Technologies Used</h3>
-              <ul class="skills">
-                <li>Microsoft Excel</li>
-                <li>VBA Script</li>
-                <li>Google Sheets</li>
-                <li>Solver</li>
-                <li>Linear Programming</li>
-                <li>Combinations and Permutations</li>
-              </ul>
-            </div> <!-- card -->
+    <div class="card">
+      <h2>Deck Optimizer (Spreadsheet)</h2>
+      <a href="http://ezellf.com/blog/?p=156" class="portfolio-link"><img class="portfolio-img" src="images/project1.JPG" alt="Deck Optmizer. First iteration."></a>
+      <p>This tool has allowed hundreds of Yu-Gi-Oh! duelists to build competitive decks with mathematial accuracy.</p>
+      <p>Players are able to configure their decks to maximize the probabilities of desired opening hands, while minimizing drawbacks.
+    This project has spawned my desire to further improve my web development skills, as many duelists may not have access to a spreadsheet tool, or
+  know how to operate it.</p>
+        <h3>Technologies Used</h3>
+        <ul class="skills">
+          <li>Microsoft Excel</li>
+          <li>VBA Script</li>
+          <li>Google Sheets</li>
+          <li>Solver</li>
+          <li>Linear Programming</li>
+          <li>Combinations and Permutations</li>
+        </ul>
+      </div> <!-- card -->
 
-      </main>
+    </main>
 
-        <footer>
-          <ul>
-            <li><a href="https://twitter.com/_Ezell_" class="social twitter">Twitter</a></li>
-            <li><a href="https://www.linkedin.com/in/ezell-frazier-830a50135" class="social linkedin">LinkedIn</a></li>
-            <li><a href="https://github.com/lynellf" class="social github">Github</a></li>
-            <li><a href="https://teamtreehouse.com/ezellfrazier" class="social treehouse">Treehouse</a></li>
-          </ul>
-          <p class="copyright">Copyright 2017, Ezell Frazier</p>
-        </footer>
+    <footer>
+      <ul>
+        <li><a href="https://twitter.com/_Ezell_" class="social twitter">Twitter</a></li>
+        <li><a href="https://www.linkedin.com/in/ezell-frazier-830a50135" class="social linkedin">LinkedIn</a></li>
+        <li><a href="https://github.com/lynellf" class="social github">Github</a></li>
+        <li><a href="https://teamtreehouse.com/ezellfrazier" class="social treehouse">Treehouse</a></li>
+      </ul>
+      <p class="copyright">Copyright 2017, Ezell Frazier</p>
+    </footer>
 
-        <script type="text/javascript">
-        const navi = document.querySelector(".nav"),
-            burger = document.querySelector(".hamburger"),
-            toggleMainBurger = () => {
-                if (navi.style.display === "") {
-                    navi.style.display = "flex";
-                } else {
-                    if (navi.style.display === "flex") {
-                        navi.style.display = "";
-                    }
+    <script type="text/javascript">
+    const navi = document.querySelector(".nav"),
+          burger = document.querySelector(".hamburger"),
+        toggleMainBurger = () => {
+            if (navi.style.display === "") {
+                navi.style.display = "flex";
+            } else {
+                if (navi.style.display === "flex") {
+                    navi.style.display = "";
                 }
-            };
-        burger.addEventListener('click', () => {
-            toggleMainBurger();
-        });
-        </script>
+            }
+        };
+    burger.addEventListener('click', () => {
+        toggleMainBurger();
+    });
+    </script>
   </body>
 </html>

@@ -34,6 +34,7 @@ a:hover {
   padding: 10px;
   position: fixed;
   text-align: center;
+  z-index: 1;
 }
 .nav {
   display: flex;
@@ -95,7 +96,7 @@ a:hover {
   text-align: center;
   background: linear-gradient(#5c37ff, transparent 100%),
               linear-gradient(0deg, #f7f5f0, transparent 3%),
-              url('images/code.png') no-repeat center ;
+              url('images/code.PNG') no-repeat center ;
 
   background-size: cover;
   overflow: hidden;
@@ -118,7 +119,7 @@ header .profile-image {
 }
 
 header .profile-image:hover {
-  transform: scale(1.2) rotate(5deg);
+  transform: scale(1.2) rotate(360deg);
 }
 
 .tag {
@@ -148,6 +149,8 @@ header .profile-image:hover {
   transition: all .5s;
   margin-left: auto;
   margin-right: auto;
+  display: flex;
+  flex-direction: column;
 }
 
 .row {
@@ -180,6 +183,10 @@ h3 {
   border-color: #ff99ff;
 }
 
+.row:hover {
+  border-color: #ff99ff;
+}
+
 .res-skills {
   display: flex;
 }
@@ -204,6 +211,24 @@ ul.skills {
 
 .skills li:nth-child(odd) {
   background: #a95eff;
+}
+
+.portfolio-img {
+  width: 70%;
+  height: 70%;
+  border: 2px solid black;
+  align-self: center;
+  box-shadow: 0 2px 2px 0 black;
+  opacity: 0.4;
+  transition: all .5s;
+}
+
+.portfolio-img:hover {
+  opacity: 1;
+}
+
+a.portfolio-link {
+  text-align: center;
 }
 
 footer {
@@ -350,7 +375,7 @@ a.social:hover {
 
   footer {
     font-size: 1.3em;
-    margin: 40px 0 0 0 auto;
+    margin: 40px 0 0 0;
   }
 
 }
