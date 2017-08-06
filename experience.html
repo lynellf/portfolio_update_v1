@@ -5,22 +5,25 @@
     <title>Experience</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css?family=Muli%7CRoboto:400,300,500,700,900" rel="stylesheet"></head>
+    <link href="https://fonts.googleapis.com/css?family=Muli%7CRoboto:400,300,500,700,900" rel="stylesheet">
   </head>
   <body>
 
     <div class="main-nav">
+      <span class="hamburger">&equiv;</span>
         <ul class="nav">
           <li class="name">Ezell Frazier</li>
           <li><a href="index.html">Home</a></li>
-          <li><a href="#">Experience</a></li>
-          <li><a href="#">Projects</a></li>
+          <li><a href="experience.html">Experience</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="http://ezellf.com/blog/">Blog</a></li>
         </ul>
     </div>
 
     <header class="experience">
-      <h1 class="tag name">Expeience</h1>
-      <p class="tag">See what I have accomplished over the years.</p>
+      <img src="images/ezell.jpg" alt="Image of Ezell Frazier." class="profile-image">
+      <h1 class="tag name">Work experience.</h1>
+      <p class="tag location">See what I have accomplished.</p>
     </header>
 
     <main class="exp-flex">
@@ -136,6 +139,21 @@
       </ul>
       <p class="copyright">Copyright 2017, Ezell Frazier</p>
     </footer>
-
+    <script type="text/javascript">
+    const navi = document.querySelector(".nav"),
+        burger = document.querySelector(".hamburger"),
+        toggleMainBurger = () => {
+            if (navi.style.display === "") {
+                navi.style.display = "flex";
+            } else {
+                if (navi.style.display === "flex") {
+                    navi.style.display = "";
+                }
+            }
+        };
+    burger.addEventListener('click', () => {
+        toggleMainBurger();
+    });
+    </script>
   </body>
 </html>
