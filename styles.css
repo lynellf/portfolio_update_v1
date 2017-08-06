@@ -59,7 +59,7 @@ a:hover {
   color: white
 }
 
-header {
+.index {
   text-align: center;
   background: linear-gradient(#5c37ff, transparent 100%),
               linear-gradient(0deg, #f7f5f0, transparent 3%),
@@ -69,9 +69,22 @@ header {
   overflow: hidden;
   padding-top: 60px;
 }
+
+.experience {
+  text-align: center;
+  background: linear-gradient(#5c37ff, transparent 100%),
+              linear-gradient(0deg, #f7f5f0, transparent 3%),
+              url('images/wortham.jpg') no-repeat center ;
+
+  background-size: cover;
+  overflow: hidden;
+  padding-top: 60px;
+}
+
 header {
   line-height: 1.5;
 }
+
 header .profile-image {
   margin-top: 50px;
   width: 150px;
@@ -82,9 +95,11 @@ header .profile-image {
   box-shadow: 5px 5px 0 0 #222;
   transition: all .5s;
 }
+
 header .profile-image:hover {
   transform: scale(1.2) rotate(5deg);
 }
+
 .tag {
   background-color: #efefef;
   color: black;
@@ -94,22 +109,60 @@ header .profile-image:hover {
   display: table;
   margin: 10px auto;
 }
+
 .location {
   background-color: #222;
   color: yellow;
 }
+
 .card {
   margin: 30px;
   padding: 20px 40px 40px;
   max-width: 500px;
+  height: 100%;
   text-align: left;
   background: #fff;
   border-bottom: 4px solid #ccc;
   border-radius: 6px;
   transition: all .5s;
 }
+
+.row {
+  display: flex;
+  flex-direction: column;
+  margin: 30px;
+  padding: 20px 40px 40px;
+  max-width: 1200px;
+  height: 100%;
+  text-align: left;
+  background: #fff;
+  border-bottom: 4px solid #ccc;
+  border-radius: 6px;
+  transition: all .5s;
+}
+
+.sub-row {
+  flex: 1;
+  line-height: 1.6em;
+}
+.techs {
+  display: flex;
+  flex-direction: column;
+}
+h3 {
+  flex: 1;
+}
+
 .card:hover {
   border-color: #ff99ff;
+}
+
+.res-skills {
+  display: flex;
+}
+
+.web-skills {
+  margin-right: 1em;
 }
 
 ul.skills {
@@ -173,6 +226,9 @@ a.linkedin {
 a.github {
   background-image: url(images/github.svg);
 }
+a.treehouse {
+  background-image: url(images/treehouse.svg);
+}
 a.social:hover {
   opacity: 1;
 }
@@ -183,10 +239,21 @@ a.social:hover {
 /* Styles for larger screens */
 @media screen and (min-width: 720px) {
 
-  .flex {
+  .home-flex {
       display: -ms-flexbox;      /* TWEENER - IE 10 */
       display: flex;
       max-width: 1200px;
+      -ms-flex-pack: distribute;
+      justify-content: space-around;
+      margin: 0 auto;
+      flex: 1;
+  }
+
+  .exp-flex {
+      display: -ms-flexbox;      /* TWEENER - IE 10 */
+      display: flex;
+      flex-direction: column;
+      /*flex-wrap: wrap;*/
       -ms-flex-pack: distribute;
       justify-content: space-around;
       margin: 0 auto;
@@ -209,6 +276,24 @@ a.social:hover {
 
   main p {
     line-height: 1.6em;
+  }
+
+  .row {
+    display: flex;
+    flex-direction: row;
+    margin: 30px;
+    padding: 20px 40px 40px;
+    max-width: 1024px;
+    height: 100%;
+    text-align: left;
+    background: #fff;
+    border-bottom: 4px solid #ccc;
+    border-radius: 6px;
+    transition: all .5s;
+  }
+
+  .techs {
+    flex-direction: row;
   }
 
   footer {
